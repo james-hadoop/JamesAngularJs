@@ -275,7 +275,6 @@
      <source>1.8</source>
      <target>1.8</target>
      <encoding>UTF-8</encoding>
-     <!--<failOnMissingWebXml>false</failOnMissingWebXml> -->
     </configuration>
    </plugin>
    <plugin>
@@ -291,7 +290,7 @@
     <artifactId>maven-jar-plugin</artifactId>
     <version>2.4</version>
     <configuration>
-     <outputDirectory>target/JamesWeb/</outputDirectory>
+     <outputDirectory>target/JamesAngularJs/</outputDirectory>
     </configuration>
    </plugin>
    <plugin>
