@@ -41,6 +41,7 @@
         padding: 10px 0;
     }
     .gallery-thumbs .swiper-slide {
+        width: 25%;
         height: 100%;
         opacity: 0.4;
     }
@@ -64,6 +65,16 @@
             <div class="swiper-slide" style="background-image:url(../pic/8.jpg)"></div>
             <div class="swiper-slide" style="background-image:url(../pic/9.jpg)"></div>
             <div class="swiper-slide" style="background-image:url(../pic/10.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/11.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/12.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/13.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/14.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/15.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/16.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/17.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/18.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/19.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/20.jpg)"></div>
         </div>
         <!-- Add Arrows -->
         <div class="swiper-button-next swiper-button-white"></div>
@@ -71,21 +82,31 @@
     </div>
     <div class="swiper-container gallery-thumbs">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/4.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/5.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/6.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/7.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/8.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/9.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/10.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/11.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/12.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/13.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/14.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/15.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/16.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/17.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/18.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/19.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../pic/20.jpg)"></div>
         </div>
     </div>
 
     <!-- Swiper JS -->
-    <script src="../dist/js/swiper.js"></script>
+    <script type="text/javascript" src="../js/swiper/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -93,15 +114,12 @@
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         spaceBetween: 10,
-        loop:true,
-        loopedSlides: 5, //looped slides should be the same     
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        centeredSlides: true,
+        slidesPerView: 'auto',
         touchRatio: 0.2,
-        loop:true,
-        loopedSlides: 5, //looped slides should be the same
         slideToClickedSlide: true
     });
     galleryTop.params.control = galleryThumbs;
