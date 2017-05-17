@@ -1,0 +1,34 @@
+<div class="container" ng-app="animateApp" ng-controller="mainController">
+
+ <header class="text-center">
+  <h3>PictureSlider2</h3>
+
+  <!-- use ng-click to toggle true and false -->
+  <a class="btn btn-primary" href="" ng-click="lions = !lions">swtich_1</a> <a class="btn btn-success" href=""
+   ng-click="cranes = !cranes">swtich_2</a>
+ </header>
+
+ <div class="row">
+  <div class="col-xs-6">
+
+   <!-- show and hide the lion picture -->
+   <div class="jumbotron" ng-show="lions">
+    <img src="http://www.gbtags.com/gb/laitu/300x400&text=1/222222" class="img-responsive img-thumbnail">
+   </div>
+
+  </div>
+  <div class="col-xs-6">
+
+   <!-- show and hide the crane picture -->
+   <div class="jumbotron" ng-show="cranes">
+    <img src="http://www.gbtags.com/gb/laitu/300x400&text=2/ffffff" class="img-responsive img-thumbnail">
+   </div>
+
+  </div>
+ </div>
+
+</div>
+
+<script src="http://cdn.gbtags.com/angular.js/1.2.20/angular.min.js"></script>
+<script src="http://cdn.gbtags.com/angular.js/1.2.20/angular-animate.min.js"></script>
+<script src="http://cdn.gbtags.com/prefixfree/1.0.7/prefixfree.min.js"></script>
