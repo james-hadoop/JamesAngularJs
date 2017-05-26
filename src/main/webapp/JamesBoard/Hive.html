@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script type="text/javascript" src="../js/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+
+ <div ng-app="myApp" ng-controller="formCtrl">
+  <form>
+   <textarea rows="10" style="width: 100%" ng-model="hiveSql"></textarea>
+   <br />
+   <button class="btn btn-success" ng-click="submit()">submit</button>
+   <br />
+   <p>
+    <textarea rows="10" style="width: 100%; margin-top: 20px;" ng-model="hiveResult"></textarea>
+  </form>
+ </div>
+
+ <script>
+		var app = angular.module('myApp', []);
+		app.controller('formCtrl', function($scope) {
+			$scope.hiveSql = "select * from mydb.u;";
+
+			$scope.submit = function() {
+				$scope.hiveResult = $scope.hiveSql + "\nhiveResult";
+			};
+		});
+	</script>
+
+</body>
+</html>
